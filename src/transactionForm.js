@@ -28,11 +28,13 @@ save = () => {
         return (
             
             <div>
+                <table className="Table">
                 <input value={this.state.name} onChange={this.setName} type="text" placeholder="Borrower's Name"/>
                 <input value={this.state.amount} onChange={this.setAmount} type="number" placeholder="Amount"/>
                 <button onClick={this.save}>
                     Add to List
                     </button>
+                    </table>
                 </div>
 
   

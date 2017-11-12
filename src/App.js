@@ -28,15 +28,7 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-      <header className="App-header">
-      
-      <img src={logo} className="App-logo" alt="logo" />
-      <h1 className="Borrowed Money">Borrowed Money</h1>
-    </header>
-    <p className="App-intro">
-      Keep track of the money people borrowed from you. <br /> Input.<br /> Enter. <br />Then wait for payment.
-      <br /> That simple.  
-    </p>
+    <img src="https://image.ibb.co/mvga3G/borrowed_money.jpg" alt="borrowed_money" class="pull-left gap-left img-rounded" />
     </div>
 
         <TransactionForm addTransaction={this.addTransaction} />
@@ -44,15 +36,15 @@ class App extends Component {
         <table className="debt-history-table">
           <thead>
             <tr>
-              <td>Borrower's Name</td>
-              <td>Amount Borrowed</td>
+              <th>Borrower's Name</th>
+              <th>Amount Borrowed</th>
               </tr>
               </thead>
           <tbody>
             {list}
             <tr>
-              <td> Total: </td>
-                <td> {total} </td>
+              <td><strong> Total:</strong> </td>
+                <td><strong> {total} </strong></td>
              </tr>
            </tbody>
           </table>
@@ -62,6 +54,7 @@ class App extends Component {
     }
   }
 
+  
   class ListItem extends Component {
     render() {
       return (
